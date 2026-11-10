@@ -64,14 +64,14 @@ navMenu.querySelectorAll('.nav-link').forEach((link) => {
 });
 
 /* ── 4. SCROLL-REVEAL ANIMATION ── */
-// Add the 'reveal' class to anything we want to animate in
+// Add the 'reveal' class to elements we want to animate in
 const revealTargets = [
   '.section-label',
   '.section-title',
   '.section-subtitle',
   '.about-text',
-  '.about-cards',
-  '.skill-card',
+  '.about-details',
+  '.skill-category',
   '.project-card',
   '.contact-info',
   '.contact-form',
@@ -117,6 +117,7 @@ backToTopBtn.addEventListener('click', () => {
 /* ── 6. CONTACT FORM — CLIENT-SIDE VALIDATION ── */
 const contactForm = document.getElementById('contact-form');
 const formStatus  = document.getElementById('form-status');
+const submitBtn   = document.getElementById('contact-submit');
 
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault(); // prevent actual submission (no backend yet)
@@ -125,23 +126,26 @@ contactForm.addEventListener('submit', (e) => {
   const email   = document.getElementById('contact-email-field').value.trim();
   const message = document.getElementById('contact-message').value.trim();
 
+  // Reset status
+  formStatus.textContent = '';
+  formStatus.style.color = '';
+
   // Simple validation
   if (!name || !email || !message) {
-    formStatus.textContent = '⚠️ Please fill in all fields.';
-    formStatus.style.color = '#f87171';
+    formStatus.textContent = 'Please fill in all fields.';
+    formStatus.style.color = '#e25a5a';
     return;
   }
 
   // Basic email format check
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(email)) {
-    formStatus.textContent = '⚠️ Please enter a valid email address.';
-    formStatus.style.color = '#f87171';
+    formStatus.textContent = 'Please enter a valid email address.';
+    formStatus.style.color = '#e25a5a';
     return;
   }
 
-  // Success feedback (no real email is sent — add a backend or Formspree later)
-  formStatus.textContent = '✅ Message received! (Note: add a backend or Formspree to actually send emails.)';
-  formStatus.style.color = '#34d399';
-  contactForm.reset();
+  // No backend connected yet — show a helpful note instead of faking success
+  formStatus.textContent = 'Form validation passed. Connect a backend or Formspree to send messages.';
+  formStatus.style.color = '#7a8599';
 });

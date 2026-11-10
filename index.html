@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahlet Getnet — Web Developer Portfolio</title>
+  <title>Mahlet Getnet — Software Developer</title>
   <meta name="description" content="Portfolio of Mahlet Getnet, a software engineering student and aspiring web developer building practical web projects with HTML, CSS, JavaScript, PHP, and MySQL." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,7 +15,7 @@
   <!-- NAVIGATION -->
   <header id="site-header">
     <nav id="main-nav" aria-label="Main navigation">
-      <a class="logo" href="#" aria-label="Home">MG<span class="logo-dot">.</span></a>
+      <a class="logo" href="#" aria-label="Home">Mahlet<span class="logo-dot">.</span></a>
 
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span class="bar"></span>
@@ -37,13 +37,11 @@
     <!-- HERO -->
     <section class="hero" id="hero">
       <div class="hero-content">
-        <p class="tag">&#9679; Software Engineering Student</p>
-        <h1>Hello, I'm <span class="highlight">Mahlet Getnet</span></h1>
-        <h2 class="hero-sub">Aspiring Web Developer</h2>
-        <p class="hero-desc">I build websites and turn ideas into working projects.<br>
-          Passionate about clean code, great design, and solving real problems.</p>
+        <p class="hero-greeting">Hi, I'm Mahlet Getnet</p>
+        <h1>I build things<br>for the web.</h1>
+        <p class="hero-desc">Software engineering student focused on creating clean, functional websites and web applications. I care about writing good code and solving real problems.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#projects" id="hero-cta-projects">Explore My Projects</a>
+          <a class="btn btn-primary" href="#projects" id="hero-cta-projects">View My Work</a>
           <a class="btn btn-outline" href="#contact"  id="hero-cta-contact">Get In Touch</a>
         </div>
       </div>
@@ -66,30 +64,31 @@
     <!-- ABOUT -->
     <section id="about" class="section-about">
       <div class="section-inner">
-        <div class="section-label">01 / About</div>
-        <h2 class="section-title">About Me</h2>
+        <span class="section-label">About</span>
+        <h2 class="section-title">A bit about me</h2>
         <div class="about-grid">
           <div class="about-text">
-            <p>I'm a <strong>software engineering student</strong> learning web development and building practical projects. I enjoy turning ideas into real, working products — whether that's a clean front-end interface or a back-end powered by PHP and MySQL.</p>
-            <p>I'm eager to grow, collaborate, and contribute to meaningful projects. I'm currently looking for opportunities where I can keep learning while delivering real value.</p>
+            <p>I'm a <strong>software engineering student</strong> who enjoys the process of building things from scratch. Web development caught my attention because it lets me take an idea and turn it into something people can actually use — from structuring a page with clean HTML to making it dynamic with JavaScript and PHP.</p>
+            <p>I'm drawn to problem-solving and the kind of learning that comes from working through real projects. I don't have years of experience, but I bring curiosity, persistence, and a genuine interest in getting better at this craft every day.</p>
+            <p>Right now, I'm looking for opportunities — junior roles, internships, or collaborations — where I can contribute, learn from others, and keep growing as a developer.</p>
           </div>
-          <div class="about-cards">
-            <div class="info-card">
-              <span class="info-icon">&#127891;</span>
+          <div class="about-details">
+            <div class="detail-card">
+              <div class="detail-icon" aria-hidden="true">&#127891;</div>
               <div>
                 <strong>Education</strong>
                 <p>Software Engineering Student</p>
               </div>
             </div>
-            <div class="info-card">
-              <span class="info-icon">&#128161;</span>
+            <div class="detail-card">
+              <div class="detail-icon" aria-hidden="true">&#128161;</div>
               <div>
                 <strong>Focus</strong>
                 <p>Web Development &amp; Practical Projects</p>
               </div>
             </div>
-            <div class="info-card">
-              <span class="info-icon">&#128640;</span>
+            <div class="detail-card">
+              <div class="detail-icon" aria-hidden="true">&#127919;</div>
               <div>
                 <strong>Goal</strong>
                 <p>Open to Junior Developer Roles</p>
@@ -103,63 +102,71 @@
     <!-- SKILLS -->
     <section id="skills" class="section-skills">
       <div class="section-inner">
-        <div class="section-label">02 / Skills</div>
-        <h2 class="section-title">My Skills</h2>
-        <p class="section-subtitle">Technologies I work with</p>
-        <div class="skills-grid">
+        <span class="section-label">Skills</span>
+        <h2 class="section-title">Technologies I work with</h2>
+        <p class="section-subtitle">The tools and languages I use to build web projects.</p>
 
-          <div class="skill-card" id="skill-html">
-            <div class="skill-icon skill-html-color">&lt;/&gt;</div>
-            <h3>HTML</h3>
-            <p>Semantic markup, accessibility, and solid document structure.</p>
+        <div class="skills-container">
+          <!-- Frontend -->
+          <div class="skill-category">
+            <h3 class="category-title">Frontend</h3>
+            <div class="category-cards">
+              <div class="skill-card" id="skill-html">
+                <div class="skill-icon skill-html-color" aria-hidden="true">&lt;/&gt;</div>
+                <h4>HTML</h4>
+                <p>Semantic markup, accessibility, and solid document structure.</p>
+              </div>
+              <div class="skill-card" id="skill-css">
+                <div class="skill-icon skill-css-color" aria-hidden="true">&#9681;</div>
+                <h4>CSS</h4>
+                <p>Responsive layouts with Flexbox, Grid, and custom styling.</p>
+              </div>
+              <div class="skill-card" id="skill-js">
+                <div class="skill-icon skill-js-color" aria-hidden="true">JS</div>
+                <h4>JavaScript</h4>
+                <p>DOM manipulation, events, and interactive web experiences.</p>
+              </div>
+            </div>
           </div>
 
-          <div class="skill-card" id="skill-css">
-            <div class="skill-icon skill-css-color">&#9681;</div>
-            <h3>CSS</h3>
-            <p>Responsive layouts with Flexbox, Grid, and custom animations.</p>
+          <!-- Backend & Tools -->
+          <div class="skill-category">
+            <h3 class="category-title">Backend &amp; Tools</h3>
+            <div class="category-cards">
+              <div class="skill-card" id="skill-php">
+                <div class="skill-icon skill-php-color" aria-hidden="true">PHP</div>
+                <h4>PHP</h4>
+                <p>Server-side scripting and dynamic web application logic.</p>
+              </div>
+              <div class="skill-card" id="skill-mysql">
+                <div class="skill-icon skill-db-color" aria-hidden="true">DB</div>
+                <h4>MySQL</h4>
+                <p>Relational databases, queries, and data management.</p>
+              </div>
+              <div class="skill-card" id="skill-git">
+                <div class="skill-icon skill-git-color" aria-hidden="true">GIT</div>
+                <h4>Git</h4>
+                <p>Version control, branching, and collaborative workflows.</p>
+              </div>
+            </div>
           </div>
-
-          <div class="skill-card" id="skill-js">
-            <div class="skill-icon skill-js-color">JS</div>
-            <h3>JavaScript</h3>
-            <p>DOM manipulation, events, and interactive web experiences.</p>
-          </div>
-
-          <div class="skill-card" id="skill-php">
-            <div class="skill-icon skill-php-color">PHP</div>
-            <h3>PHP</h3>
-            <p>Server-side scripting and dynamic web application logic.</p>
-          </div>
-
-          <div class="skill-card" id="skill-mysql">
-            <div class="skill-icon skill-db-color">DB</div>
-            <h3>MySQL</h3>
-            <p>Relational databases, queries, and data management.</p>
-          </div>
-
-          <div class="skill-card" id="skill-git">
-            <div class="skill-icon skill-git-color">GIT</div>
-            <h3>Git</h3>
-            <p>Version control, branching, and collaborative workflows.</p>
-          </div>
-
         </div>
+
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section-projects">
       <div class="section-inner">
-        <div class="section-label">03 / Projects</div>
-        <h2 class="section-title">My Projects</h2>
-        <p class="section-subtitle">What I've been building</p>
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">What I've been building</h2>
+        <p class="section-subtitle">Real projects I'm working on to learn and grow as a developer.</p>
 
         <div class="projects-grid">
 
           <article class="project-card" id="project-1">
             <div class="project-card-header project-color-1">
-              <div class="project-icon">&#128187;</div>
+              <div class="project-number" aria-hidden="true">01</div>
             </div>
             <div class="project-card-body">
               <div class="project-tags">
@@ -177,7 +184,7 @@
 
           <article class="project-card" id="project-2">
             <div class="project-card-header project-color-2">
-              <div class="project-icon">&#128064;</div>
+              <div class="project-number" aria-hidden="true">02</div>
             </div>
             <div class="project-card-body">
               <div class="project-tags">
@@ -194,7 +201,7 @@
 
           <article class="project-card" id="project-3">
             <div class="project-card-header project-color-3">
-              <div class="project-icon">&#127775;</div>
+              <div class="project-number" aria-hidden="true">03</div>
             </div>
             <div class="project-card-body">
               <div class="project-tags">
@@ -218,24 +225,23 @@
     <!-- CONTACT -->
     <section id="contact" class="section-contact">
       <div class="section-inner">
-        <div class="section-label">04 / Contact</div>
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Let's connect and build something useful together.</p>
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Let's work together</h2>
+        <p class="section-subtitle">I'm open to junior developer roles, internships, and freelance opportunities. Feel free to reach out.</p>
 
         <div class="contact-grid">
           <div class="contact-info">
-            <p class="contact-blurb">I'm currently open to junior developer roles, internships, and freelance opportunities. Feel free to reach out!</p>
             <div class="contact-links">
               <a class="contact-item" href="mailto:mahlet@example.com" id="contact-email">
-                <span class="contact-item-icon">&#9993;</span>
+                <span class="contact-item-icon" aria-hidden="true">&#9993;</span>
                 <span>mahlet@example.com</span>
               </a>
               <a class="contact-item" href="https://github.com" target="_blank" rel="noopener" id="contact-github">
-                <span class="contact-item-icon">&#9741;</span>
+                <span class="contact-item-icon" aria-hidden="true">&#9741;</span>
                 <span>GitHub</span>
               </a>
               <a class="contact-item" href="https://linkedin.com" target="_blank" rel="noopener" id="contact-linkedin">
-                <span class="contact-item-icon">in</span>
+                <span class="contact-item-icon" aria-hidden="true">in</span>
                 <span>LinkedIn</span>
               </a>
             </div>
@@ -244,11 +250,11 @@
 
           <form class="contact-form" id="contact-form" novalidate>
             <div class="form-group">
-              <label for="contact-name">Your Name</label>
-              <input type="text"  id="contact-name"         name="name"    placeholder="e.g. John Doe"        required />
+              <label for="contact-name">Name</label>
+              <input type="text"  id="contact-name"         name="name"    placeholder="Your full name"        required />
             </div>
             <div class="form-group">
-              <label for="contact-email-field">Your Email</label>
+              <label for="contact-email-field">Email</label>
               <input type="email" id="contact-email-field"  name="email"   placeholder="you@example.com"      required />
             </div>
             <div class="form-group">
@@ -267,8 +273,26 @@
 
   <!-- FOOTER -->
   <footer id="site-footer">
-    <p>Designed &amp; built by <strong>Mahlet Getnet</strong> &copy; 2026</p>
-    <p class="footer-sub">Made with HTML &middot; CSS &middot; JavaScript</p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="footer-logo" href="#">Mahlet<span class="logo-dot">.</span></a>
+        <p class="footer-tagline">Software engineering student building for the web.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">&#9741;</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="mailto:mahlet@example.com" aria-label="Email">&#9993;</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Designed &amp; built by <strong>Mahlet Getnet</strong> &copy; 2026</p>
+    </div>
   </footer>
 
   <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</button>
